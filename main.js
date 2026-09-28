@@ -163,7 +163,7 @@
   const copy = () => navigator.clipboard?.writeText(EMAIL).then(() => {
     toast.hidden = false; clearTimeout(tt); tt = setTimeout(() => (toast.hidden = true), 2000);
   }).catch(() => {});
-  $$('.mail').forEach(a => a.addEventListener('click', copy));
+  $$('.mail:not(.li)').forEach(a => a.addEventListener('click', copy));
   const bubble = $('.bubble');
   $('.hi-btn').addEventListener('click', e => { e.stopPropagation(); bubble.hidden = !bubble.hidden; });
   $('.copy-btn').addEventListener('click', e => { e.stopPropagation(); copy(); });
@@ -175,7 +175,7 @@
       title: 'Food R&D B2B SaaS Platform',
       tags: [['Food-tech', 1], ['B2B SaaS'], ['Product Design'], ['Design Systems'], ['UX Research']],
       cover: CS + 'cover.webp',
-      pdf: CS + 'food-rnd-b2b-saas-case-study.pdf',
+      link: 'case-study.html',
       sections: [
         ['Overview', 'A workflow-automation platform for food-tech R&D that brings experimentation, sensory, processing and sample-request teams onto one system, with API connectors, AI support and secure handling of proprietary formulation data.', 'overview'],
         ['Problem', 'R&D work was scattered across spreadsheets, legacy tools and hand-offs. Scientists lost whole afternoons to manual record-keeping, and strict IP rules meant any AI had to keep proprietary data inside the platform.', 'problem'],
@@ -194,7 +194,7 @@
       `<div class="m-body"><h2 id="m-title">${p.title}</h2><div class="chips">${p.tags.map(([t, hl]) => `<span${hl ? ' class="hl"' : ''}>${t}</span>`).join('')}</div><hr>` +
       (p.sections || DEFAULT).map(([h, txt, img]) => `<h3>${h}</h3><p>${txt}</p>` +
         (img ? `<img class="m-img" src="${CS + img}.webp" alt="${h} from the case study" loading="lazy">` : '<div class="ph-box m-img">Image</div>')).join('') +
-      (p.pdf ? `<a class="cta" href="${p.pdf}" target="_blank" rel="noopener">View case study <span aria-hidden="true">↗</span></a>` : '') + '</div>';
+      (p.link ? `<a class="cta" href="${p.link}" target="_blank" rel="noopener">View case study <span aria-hidden="true">↗</span></a>` : '') + '</div>';
     lastFocus = btn; modal.hidden = false; mScroll.scrollTop = 0; document.body.style.overflow = 'hidden';
     requestAnimationFrame(() => modal.classList.add('show')); $('.m-close').focus();
   }

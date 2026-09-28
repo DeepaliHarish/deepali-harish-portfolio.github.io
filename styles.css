@@ -70,7 +70,7 @@ button{font:inherit;color:inherit}
 .role{font-size:14px}
 .tl-txt ul{margin:0;padding:8px 0 0 21px;font-size:14px}
 .tl-txt li{margin-bottom:8px}
-.tl-txt b{font-weight:400;color:#064db8}
+.tl-txt b{font-weight:700;color:#0b2559}
 
 /* WORK */
 .work{position:relative;margin-top:71px;padding:120px 20px 272px;background:#1d0f08;display:flex;flex-direction:column;align-items:center;gap:125px}
@@ -172,10 +172,11 @@ button.row{cursor:pointer}
   .card-head h3{font-size:26px}
   .row{font-size:17px}
   .foot-wrap{padding:0 20px 140px}
-  .drop{font-size:24px;line-height:32px;white-space:nowrap}
+  .hi-row{justify-content:center;gap:4px}
+  .drop{font-size:min(24px,5.6vw);line-height:1.3;white-space:nowrap;padding-bottom:6px}
   .hero-frame{--e:16px}
   .brand{left:calc(var(--e) + 22px)}.loc{right:calc(var(--e) + 22px)}
-  .hi-btn{width:92px;height:77px}
+  .hi-btn{width:min(92px,21vw);height:auto;aspect-ratio:138/115}
   .foot-row{flex-wrap:wrap}
   .mail{font-size:16px}
   .fly{height:40px}
