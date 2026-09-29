@@ -4,53 +4,257 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Food R&amp;D B2B SaaS Platform — Case Study · Deepali Harish</title>
-<meta name="description" content="Case study: a workflow-automation platform for food-tech R&amp;D, designed end to end by Deepali Harish.">
+<meta name="description" content="Case study: Innovatenxt, a workflow-automation platform for food-tech R&amp;D, designed end to end by Deepali Harish.">
 <style>
+@font-face{font-family:"Mynerve";src:url(assets/fonts/cs/mynerve-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Montserrat Alternates";src:url(assets/fonts/cs/montserrat-alternates-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Montserrat Alternates";src:url(assets/fonts/cs/montserrat-alternates-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Montserrat Alternates";src:url(assets/fonts/cs/montserrat-alternates-900.woff2) format("woff2");font-weight:900;font-display:swap}
+@font-face{font-family:"Bebas Neue";src:url(assets/fonts/cs/bebas-neue-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Besley";src:url(assets/fonts/cs/besley-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Oooh Baby";src:url(assets/fonts/cs/oooh-baby-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Montserrat";src:url(assets/fonts/cs/montserrat-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Montserrat";src:url(assets/fonts/cs/montserrat-600.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Montserrat";src:url(assets/fonts/cs/montserrat-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Micro 5";src:url(assets/fonts/cs/micro-5-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Be Vietnam Pro";src:url(assets/fonts/cs/be-vietnam-pro-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Be Vietnam Pro";src:url(assets/fonts/cs/be-vietnam-pro-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Be Vietnam Pro";src:url(assets/fonts/cs/be-vietnam-pro-600.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Poppins";src:url(assets/fonts/cs/poppins-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Imperial Script";src:url(assets/fonts/cs/imperial-script-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Mali";src:url(assets/fonts/cs/mali-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(assets/fonts/cs/ibm-plex-mono-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(assets/fonts/cs/ibm-plex-mono-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Tajawal";src:url(assets/fonts/cs/tajawal-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Tajawal";src:url(assets/fonts/cs/tajawal-500.woff2) format("woff2");font-weight:500;font-display:swap}
 @font-face{font-family:Moderustic;src:url(assets/fonts/moderustic-500.woff2) format("woff2");font-weight:500;font-display:swap}
 *{box-sizing:border-box}
 html,body{overscroll-behavior-x:none}
-body{margin:0;background:#ececec;font-family:Moderustic,system-ui,sans-serif;color:#3b3b3b}
+body{margin:0;background:#f4f4f4;font-family:Moderustic,system-ui,sans-serif;color:#3b3b3b;overflow-x:hidden}
 .bar{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 20px;background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,.06);font-weight:500}
 .bar a{color:#3b3b3b;text-decoration:none;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.8);border:1px solid rgba(0,0,0,.08);white-space:nowrap}
 .bar a:hover{background:#fff}
 .bar span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-main{max-width:1440px;margin:0 auto;line-height:0}
-main img{display:block;width:100%;height:auto;background:#e2e2e2}
+.wrap{position:relative;margin:0 auto;width:calc(1920px * var(--s,.5));height:calc(26360px * var(--s,.5));overflow:hidden}
+.cs{position:absolute;top:0;left:0;width:1920px;height:26360px;transform:scale(var(--s,.5));transform-origin:0 0;--my:"Mynerve";--ma:"Montserrat Alternates";--bb:"Bebas Neue";--be:"Besley";--ob:"Oooh Baby";--mo:"Montserrat";--m5:"Micro 5";--bv:"Be Vietnam Pro";--po:"Poppins";--is:"Imperial Script";--mv:"MV Boli","Mali",cursive;--lt:"Lucida Sans Typewriter","Lucida Console","IBM Plex Mono",monospace;--mu:"Microsoft Uighur","Tajawal",sans-serif;--du:"Dubai","Tajawal",sans-serif}
+.bg img{display:block;width:1920px;height:auto}
+.cs p{position:absolute;margin:0;display:flex;flex-direction:column;transform-origin:0 0;counter-reset:n}
+.l{display:block}
+.u,.o{position:relative;padding-left:1.45em}
+.u::before{content:"";position:absolute;left:.55em;top:.62em;width:.28em;height:.28em;border-radius:50%;background:currentColor}
+.o{counter-increment:n}
+.o::before{content:counter(n) ".";position:absolute;left:.1em}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 </style>
 </head>
 <body>
 <header class="bar"><a href="index.html#works">&larr; Back to portfolio</a><span>Food R&amp;D B2B SaaS Platform</span></header>
-<main>
-<h1 class="sr">Food R&amp;D B2B SaaS Platform — case study by Deepali Harish</h1>
-<p class="sr">A workflow-automation platform for food-tech R&amp;D covering the problem, UX research, competitive analysis, personas, information architecture, design process, design system, product screens and learnings.</p>
-<img src="assets/case-study/pages/p01-1920.webp" srcset="assets/case-study/pages/p01-1920.webp 1920w, assets/case-study/pages/p01-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="">
-<img src="assets/case-study/pages/p02-1920.webp" srcset="assets/case-study/pages/p02-1920.webp 1920w, assets/case-study/pages/p02-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="">
-<img src="assets/case-study/pages/p03-1920.webp" srcset="assets/case-study/pages/p03-1920.webp 1920w, assets/case-study/pages/p03-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="">
-<img src="assets/case-study/pages/p04-1920.webp" srcset="assets/case-study/pages/p04-1920.webp 1920w, assets/case-study/pages/p04-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p05-1920.webp" srcset="assets/case-study/pages/p05-1920.webp 1920w, assets/case-study/pages/p05-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p06-1920.webp" srcset="assets/case-study/pages/p06-1920.webp 1920w, assets/case-study/pages/p06-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p07-1920.webp" srcset="assets/case-study/pages/p07-1920.webp 1920w, assets/case-study/pages/p07-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p08-1920.webp" srcset="assets/case-study/pages/p08-1920.webp 1920w, assets/case-study/pages/p08-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p09-1920.webp" srcset="assets/case-study/pages/p09-1920.webp 1920w, assets/case-study/pages/p09-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p10-1920.webp" srcset="assets/case-study/pages/p10-1920.webp 1920w, assets/case-study/pages/p10-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p11-1920.webp" srcset="assets/case-study/pages/p11-1920.webp 1920w, assets/case-study/pages/p11-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p12-1920.webp" srcset="assets/case-study/pages/p12-1920.webp 1920w, assets/case-study/pages/p12-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p13-1920.webp" srcset="assets/case-study/pages/p13-1920.webp 1920w, assets/case-study/pages/p13-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p14-1920.webp" srcset="assets/case-study/pages/p14-1920.webp 1920w, assets/case-study/pages/p14-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p15-1920.webp" srcset="assets/case-study/pages/p15-1920.webp 1920w, assets/case-study/pages/p15-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p16-1920.webp" srcset="assets/case-study/pages/p16-1920.webp 1920w, assets/case-study/pages/p16-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p17-1920.webp" srcset="assets/case-study/pages/p17-1920.webp 1920w, assets/case-study/pages/p17-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p18-1920.webp" srcset="assets/case-study/pages/p18-1920.webp 1920w, assets/case-study/pages/p18-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p19-1920.webp" srcset="assets/case-study/pages/p19-1920.webp 1920w, assets/case-study/pages/p19-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p20-1920.webp" srcset="assets/case-study/pages/p20-1920.webp 1920w, assets/case-study/pages/p20-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p21-1920.webp" srcset="assets/case-study/pages/p21-1920.webp 1920w, assets/case-study/pages/p21-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p22-1920.webp" srcset="assets/case-study/pages/p22-1920.webp 1920w, assets/case-study/pages/p22-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p23-1920.webp" srcset="assets/case-study/pages/p23-1920.webp 1920w, assets/case-study/pages/p23-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p24-1920.webp" srcset="assets/case-study/pages/p24-1920.webp 1920w, assets/case-study/pages/p24-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p25-1920.webp" srcset="assets/case-study/pages/p25-1920.webp 1920w, assets/case-study/pages/p25-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p26-1920.webp" srcset="assets/case-study/pages/p26-1920.webp 1920w, assets/case-study/pages/p26-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="1000" alt="" loading="lazy">
-<img src="assets/case-study/pages/p27-1920.webp" srcset="assets/case-study/pages/p27-1920.webp 1920w, assets/case-study/pages/p27-2880.webp 2880w" sizes="(max-width:1440px) 100vw, 1440px" width="1920" height="360" alt="" loading="lazy">
+<main class="wrap">
+<h1 class="sr">Innovatenxt — Food R&amp;D B2B SaaS Platform, case study by Deepali Harish</h1>
+<div class="cs">
+<div class="bg" aria-hidden="true">
+<img src="assets/case-study/pages/p01-1920.webp" srcset="assets/case-study/pages/p01-1920.webp 1920w, assets/case-study/pages/p01-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="">
+<img src="assets/case-study/pages/p02-1920.webp" srcset="assets/case-study/pages/p02-1920.webp 1920w, assets/case-study/pages/p02-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="">
+<img src="assets/case-study/pages/p03-1920.webp" srcset="assets/case-study/pages/p03-1920.webp 1920w, assets/case-study/pages/p03-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="">
+<img src="assets/case-study/pages/p04-1920.webp" srcset="assets/case-study/pages/p04-1920.webp 1920w, assets/case-study/pages/p04-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p05-1920.webp" srcset="assets/case-study/pages/p05-1920.webp 1920w, assets/case-study/pages/p05-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p06-1920.webp" srcset="assets/case-study/pages/p06-1920.webp 1920w, assets/case-study/pages/p06-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p07-1920.webp" srcset="assets/case-study/pages/p07-1920.webp 1920w, assets/case-study/pages/p07-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p08-1920.webp" srcset="assets/case-study/pages/p08-1920.webp 1920w, assets/case-study/pages/p08-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p09-1920.webp" srcset="assets/case-study/pages/p09-1920.webp 1920w, assets/case-study/pages/p09-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p10-1920.webp" srcset="assets/case-study/pages/p10-1920.webp 1920w, assets/case-study/pages/p10-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p11-1920.webp" srcset="assets/case-study/pages/p11-1920.webp 1920w, assets/case-study/pages/p11-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p12-1920.webp" srcset="assets/case-study/pages/p12-1920.webp 1920w, assets/case-study/pages/p12-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p13-1920.webp" srcset="assets/case-study/pages/p13-1920.webp 1920w, assets/case-study/pages/p13-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p14-1920.webp" srcset="assets/case-study/pages/p14-1920.webp 1920w, assets/case-study/pages/p14-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p15-1920.webp" srcset="assets/case-study/pages/p15-1920.webp 1920w, assets/case-study/pages/p15-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p16-1920.webp" srcset="assets/case-study/pages/p16-1920.webp 1920w, assets/case-study/pages/p16-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p17-1920.webp" srcset="assets/case-study/pages/p17-1920.webp 1920w, assets/case-study/pages/p17-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p18-1920.webp" srcset="assets/case-study/pages/p18-1920.webp 1920w, assets/case-study/pages/p18-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p19-1920.webp" srcset="assets/case-study/pages/p19-1920.webp 1920w, assets/case-study/pages/p19-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p20-1920.webp" srcset="assets/case-study/pages/p20-1920.webp 1920w, assets/case-study/pages/p20-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p21-1920.webp" srcset="assets/case-study/pages/p21-1920.webp 1920w, assets/case-study/pages/p21-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p22-1920.webp" srcset="assets/case-study/pages/p22-1920.webp 1920w, assets/case-study/pages/p22-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p23-1920.webp" srcset="assets/case-study/pages/p23-1920.webp 1920w, assets/case-study/pages/p23-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p24-1920.webp" srcset="assets/case-study/pages/p24-1920.webp 1920w, assets/case-study/pages/p24-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p25-1920.webp" srcset="assets/case-study/pages/p25-1920.webp 1920w, assets/case-study/pages/p25-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p26-1920.webp" srcset="assets/case-study/pages/p26-1920.webp 1920w, assets/case-study/pages/p26-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="1000" alt="" loading="lazy">
+<img src="assets/case-study/pages/p27-1920.webp" srcset="assets/case-study/pages/p27-1920.webp 1920w, assets/case-study/pages/p27-2880.webp 2880w" sizes="(max-width:1920px) 100vw, 1920px" width="1920" height="360" alt="" loading="lazy">
+</div>
+<p style="left:406px;top:1772px;white-space:pre;font:400 31px/normal var(--my);color:#494e5d;letter-spacing:3.72px"><span class="l">About this case?</span></p>
+<p style="left:406px;top:1870px;width:1134px;font:900 40px/normal var(--ma);color:#364153;letter-spacing:4.8px"><span class="l">Innovatenxt<span style="font:500 40px/normal var(--ma);color:#364153;letter-spacing:4.8px"> </span><span style="font:500 40px/normal var(--ma);color:#5d6d87;letter-spacing:4.8px">is a cutting-edge platform </span></span><span class="l"><span style="font:500 40px/normal var(--ma);color:#5d6d87;letter-spacing:4.8px">designed for the</span><span style="font:500 40px/normal var(--ma);color:#364153;letter-spacing:4.8px"> </span>food-tech industry </span><span class="l"><span style="font:500 40px/normal var(--ma);color:#5d6d87;letter-spacing:4.8px">helping innovators</span><span style="font:500 40px/normal var(--ma);color:#364153;letter-spacing:4.8px"> </span>automate workflows<span style="font:500 40px/normal var(--ma);color:#364153;letter-spacing:4.8px"> </span><span style="font:500 40px/normal var(--ma);color:#5d6d87;letter-spacing:4.8px">&amp; </span>stay creative<span style="font:500 40px/normal var(--ma);color:#5d6d87;letter-spacing:4.8px">.</span></span></p>
+<p style="left:960px;top:14337px;width:806px;font:400 24px/38px var(--lt);color:#ffffff;letter-spacing:-1.2px"><span class="l u">The site mapping was done along with the wireframing as showcasing ideas visually to the higher-ups made it easier to follow through.</span></p>
+<p style="left:191px;top:15225px;width:666px;font:400 24px/38px var(--lt);color:#ffffff;letter-spacing:-1.2px"><span class="l u">This process also helped ideate very quickly </span><span class="l u">It was easier to make any changes in this state</span><span class="l u">The detailed wireframes made it easier to explain the functionalities with ease.</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.08,0.08,1,185,14307.56);white-space:pre;text-align:center;font:700 100px/normal var(--be);color:#ffffff;letter-spacing:-7px"><span class="l">Site</span></p>
+<p style="left:0;top:0;transform:matrix(1,0,0,1,456,14374.44);white-space:pre;text-align:center;font:700 80px/normal var(--be);color:#6d4b32;letter-spacing:-5.6px"><span class="l">Mapping</span></p>
+<p style="left:125px;top:9474px;white-space:pre;font:400 24px/normal var(--ob);color:#363636;letter-spacing:2.88px"><span class="l">Visual Design</span></p>
+<p style="left:146px;top:9651px;white-space:pre;font:400 100px/normal var(--bb);color:#d5460e"><span class="l">Ux research</span></p>
+<p style="left:1055px;top:9649px;white-space:pre;font:400 100px/normal var(--bb);color:#d5460e"><span class="l">Competitive Analysis</span></p>
+<p style="left:146px;top:9612px;white-space:pre;font:400 30px/normal var(--bb);color:#47484a"><span class="l">step 1</span></p>
+<p style="left:1055px;top:9610px;white-space:pre;font:400 30px/normal var(--bb);color:#47484a"><span class="l">step 2</span></p>
+<p style="left:699px;top:9628px;white-space:pre;font:400 25px/normal var(--bb);color:#ffffff"><span class="l">timeline</span></p>
+<p style="left:798px;top:9628px;white-space:pre;font:400 25px/normal var(--bb);color:#000000"><span class="l">1 month</span></p>
+<p style="left:707.01px;top:9687px;white-space:pre;font:400 25px/normal var(--bb);color:#ffffff"><span class="l">levels</span></p>
+<p style="left:797px;top:9687px;white-space:pre;font:400 25px/normal var(--bb);color:#000000"><span class="l">4 levels</span></p>
+<p style="left:144px;top:9802.6px;width:143.73px;font:400 24px/normal var(--bb);color:#5d6d87"><span class="l">teams consulted</span></p>
+<p style="left:1055px;top:9954px;width:143.73px;font:400 24px/normal var(--bb);color:#5d6d87"><span class="l">Key Findings</span></p>
+<p style="left:327.73px;top:9803px;width:545.83px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l">About 4 types of R&amp;D teams were consulted</span><span class="l u">Experimentation team</span><span class="l u">Sensory team</span><span class="l u">Processing team</span><span class="l u">Sample request team</span></p>
+<p style="left:1055px;top:9803px;width:730px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l">To gain a better understanding of the problems faced by the users, we conducted a competitive analysis based on the softwares that are currently available in the market.</span></p>
+<p style="left:1051px;top:10007px;width:730px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l">Positives:</span></p>
+<p style="left:1051px;top:10044px;width:730px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l u">Due to longer presence, feature list is very high</span><span class="l u">API connections available</span><span class="l u">Easy access to a very heavy data driven industry</span><span class="l u">Very few companies offering AI chat for formulation</span></p>
+<p style="left:1051px;top:10217px;width:730px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l">Negatives:</span></p>
+<p style="left:1051px;top:10254px;width:730px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l u">Harder for older users to mauver around due to complex workflows</span><span class="l u">Designs are mostly outdated</span><span class="l u">Limited formats of report generation</span><span class="l u">Older softwares offer more manual input and workflows</span><span class="l u">API data transfers between software &amp; equipments are limited</span><span class="l u">End-to-end workflows are not customizable</span></p>
+<p style="left:144px;top:10023px;white-space:pre;font:400 24px/normal var(--bb);color:#5d6d87"><span class="l">method conducted</span></p>
+<p style="left:333px;top:10023px;width:545.83px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l">Direct interviews were conducted to understand real-time problems to narrow down the gaps</span></p>
+<p style="left:144px;top:10183px;white-space:pre;font:400 24px/normal var(--bb);color:#5d6d87"><span class="l">Outcome of reserach</span></p>
+<p style="left:350px;top:10183px;width:545.83px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l u">Complex workflows</span><span class="l u">Time consuming</span><span class="l u">Mostly manual work</span><span class="l u">API connections with other systems with our platform</span><span class="l u">Introduction of LLMs and AI on the platform</span><span class="l u">Making sure proprietary data stays within the platform</span></p>
+<p style="left:182px;top:11036px;width:1556px;text-align:center;font:400 24px/normal var(--lt);color:#ffffff;letter-spacing:-1.2px"><span class="l">Personas kept us from designing for a single client. Instead, we designed for the whole industry, solving pain points shared by many users.</span></p>
+<p style="left:205px;top:11564px;width:442px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l u">They are students or freshers </span><span class="l u">More exposed to good UI</span><span class="l u">Trying to learn</span></p>
+<p style="left:205px;top:11766px;width:442px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l o">Spends too much time trying to navigate through the system.</span><span class="l o">Tasks feel very complicated</span><span class="l o">Is not allowed to use any AI due to proprietary data</span></p>
+<p style="left:380px;top:11229px;white-space:pre;font:400 24px/normal var(--bb);color:#ffffff"><span class="l">The Interns</span></p>
+<p style="left:666px;top:10880px;width:155px;height:116px;justify-content:center;font:400 100px/normal var(--bb);color:#000000"><span class="l">user</span></p>
+<p style="left:963px;top:10902px;white-space:pre;font:400 100px/normal var(--bb);color:#ffffff"><span class="l">persona</span></p>
+<p style="left:572px;top:10858px;white-space:pre;font:400 30px/normal var(--bb);color:#ffffff"><span class="l">step 3</span></p>
+<p style="left:896px;top:11229px;white-space:pre;font:400 24px/normal var(--bb);color:#ffffff"><span class="l">The middle-man</span></p>
+<p style="left:1450px;top:11229px;white-space:pre;font:400 24px/normal var(--bb);color:#ffffff"><span class="l">the expert</span></p>
+<p style="left:319px;top:11464px;white-space:pre;font:400 24px/normal var(--bb);color:#de6026;letter-spacing:1.92px"><span class="l">EXPERIENCE:</span></p>
+<p style="left:438px;top:11463px;white-space:pre;font:400 24px/normal var(--lt);color:#47484a;letter-spacing:-1.2px"><span class="l">0–2 yrs</span></p>
+<p style="left:205px;top:11523px;white-space:pre;font:400 24px/normal var(--bb);color:#7956d5;letter-spacing:1.92px"><span class="l">behaviour:</span></p>
+<p style="left:205px;top:11725px;white-space:pre;font:400 24px/normal var(--bb);color:#7956d5;letter-spacing:1.92px"><span class="l">pain points:</span></p>
+<p style="left:742px;top:11567px;width:442px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l u">They spend more time on the system</span><span class="l u">Open to trying a more ‘feature heavy’ system</span></p>
+<p style="left:1272px;top:11568px;width:442px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l u">They handle big data</span><span class="l u">Usually the creator of these proprietary data</span></p>
+<p style="left:742px;top:11787px;width:442px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l o">Mostly the one who does all the manual entry.</span><span class="l o">More time consuming to capture the data</span><span class="l o">Also need faster generation results due to time constraints</span></p>
+<p style="left:1272px;top:11757px;width:442px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l o">Finds it hard to navigate through all the new updates</span><span class="l o">They want a particular way to perform the experimentation</span><span class="l o">They find it hard to navigate through the system as it becomes very overwhelming</span></p>
+<p style="left:842px;top:11467px;white-space:pre;font:400 24px/normal var(--bb);color:#de6026;letter-spacing:1.92px"><span class="l">EXPERIENCE:</span></p>
+<p style="left:961px;top:11466px;white-space:pre;font:400 24px/normal var(--lt);color:#47484a;letter-spacing:-1.2px"><span class="l">3–10 yrs</span></p>
+<p style="left:1379px;top:11468px;white-space:pre;font:400 24px/normal var(--bb);color:#de6026;letter-spacing:1.92px"><span class="l">EXPERIENCE:</span></p>
+<p style="left:1498px;top:11467px;white-space:pre;font:400 24px/normal var(--lt);color:#47484a;letter-spacing:-1.2px"><span class="l">10+ yrs</span></p>
+<p style="left:742px;top:11526px;white-space:pre;font:400 24px/normal var(--bb);color:#7956d5;letter-spacing:1.92px"><span class="l">behaviour:</span></p>
+<p style="left:1272px;top:11527px;white-space:pre;font:400 24px/normal var(--bb);color:#7956d5;letter-spacing:1.92px"><span class="l">behaviour:</span></p>
+<p style="left:742px;top:11746px;white-space:pre;font:400 24px/normal var(--bb);color:#7956d5;letter-spacing:1.92px"><span class="l">pain points:</span></p>
+<p style="left:1272px;top:11716px;white-space:pre;font:400 24px/normal var(--bb);color:#7956d5;letter-spacing:1.92px"><span class="l">pain points:</span></p>
+<p style="left:0;top:0;transform:matrix(0.96,-0.27,0.27,0.96,616.79,8321.93);width:426.53px;height:90.51px;justify-content:center;text-align:center;font:700 100px/normal var(--be);color:#ffffff;letter-spacing:-7px"><span class="l">Design</span></p>
+<p style="left:0;top:0;transform:matrix(1,0,0,1,955.78,8358);width:349.82px;height:90.51px;justify-content:center;text-align:center;font:700 80px/normal var(--be);color:#6d4b32;letter-spacing:-5.6px"><span class="l">Process</span></p>
+<p style="left:0;top:0;transform:matrix(0.97,-0.24,0.24,0.97,702.5,8441.95);white-space:pre;font:500 20px/normal var(--ma);color:#ffffff"><span class="l">A Process that evolves</span></p>
+<p style="left:0;top:0;transform:matrix(0.94,-0.34,0.34,0.94,1159.7,8504.86);white-space:pre;font:500 16px/normal var(--ma);color:#ffffff"><span class="l">meticulously curated</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,0.12,-0.12,0.99,230.78,7914);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Journey Mapping</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,0.12,-0.12,0.99,230.78,7956);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">User research</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,0.12,-0.12,0.99,228.43,7993);width:141.44px;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Competitive Analysis</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,0.12,-0.12,0.99,222.78,8053);width:141.44px;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">R&amp;D</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.07,0.07,1,192.38,8165.47);width:279.17px;text-align:center;font:700 24px/normal var(--ma);color:#5d6d87;letter-spacing:2.88px"><span class="l">Research </span><span class="l">&amp; </span><span class="l">Discovery </span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.03,0.03,1,211.77,8589.09);width:289px;height:69.98px;justify-content:center;text-align:center;font:700 24px/24.02px var(--ma);color:#5d6d87;letter-spacing:2.88px"><span class="l" style="margin-bottom:3px">Information</span><span class="l">Architecture</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.04,0.04,1,857.5,8816.44);white-space:pre;font:700 24px/normal var(--ma);color:#5d6d87;letter-spacing:2.88px"><span class="l">Visual Identity</span></p>
+<p style="left:1491.5px;top:7960px;white-space:pre;font:700 24px/normal var(--ma);color:#5d6d87;letter-spacing:2.88px"><span class="l">Prototyping</span></p>
+<p style="left:1486.5px;top:8589px;white-space:pre;font:700 24px/normal var(--ma);color:#5d6d87;letter-spacing:2.88px"><span class="l">Usability Testing</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.03,0.03,1,845.5,7819.67);white-space:pre;text-align:center;font:700 24px/normal var(--ma);color:#5d6d87;letter-spacing:2.88px"><span class="l">Impact </span><span class="l">&amp; </span><span class="l">Learnings</span></p>
+<p style="left:0;top:0;transform:matrix(0.97,-0.24,0.24,0.97,556.52,7848.17);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Analytics</span></p>
+<p style="left:0;top:0;transform:matrix(0.97,-0.24,0.24,0.97,565.06,7889.06);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Achievements</span></p>
+<p style="left:0;top:0;transform:matrix(0.97,-0.24,0.24,0.97,575.52,7928.06);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Takeaways</span></p>
+<p style="left:0;top:0;transform:matrix(0.97,-0.24,0.24,0.97,586.52,7966.06);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Next Steps</span></p>
+<p style="left:0;top:0;transform:matrix(1,0.08,-0.08,1,219.16,8744.01);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Structuring</span></p>
+<p style="left:0;top:0;transform:matrix(1,0.08,-0.08,1,217.16,8787.01);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Sitemap</span></p>
+<p style="left:0;top:0;transform:matrix(1,0.08,-0.08,1,215.16,8828.01);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Userflow</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,0.13,-0.13,0.99,1166.47,8757.02);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Mockups</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,0.13,-0.13,0.99,1161.47,8803.02);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Design System</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,-0.12,0.12,0.99,1588.65,8729.35);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">A/B Testing</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,-0.12,0.12,0.99,1594.19,8773.95);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">User Testing</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,-0.12,0.12,0.99,1599.27,8816.32);white-space:pre;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Feedback</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.08,0.08,1,1658.06,8087.94);width:161.84px;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">High Fidelity Mockup</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.08,0.08,1,1658.06,8158.54);width:156.79px;font:400 18px/normal var(--my);color:#494e5d;letter-spacing:2.16px"><span class="l u">Micro Interactions</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.06,0.06,1,405.08,2913.14);white-space:pre;font:400 20px/normal var(--bb);color:#d5460e"><span class="l">Problem</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.03,0.03,1,199,2951.64);width:279.17px;text-align:center;font:700 24px/normal var(--ma);color:#5d6d87;letter-spacing:2.88px"><span class="l">Ability to Use AI to speed up the process</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.03,0.03,1,1490,3163.64);width:279.17px;text-align:center;font:700 24px/normal var(--ma);color:#5d6d87;letter-spacing:2.88px"><span class="l">Need of an easy and intuitive platform</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.07,0.07,1,1524.08,3132.42);white-space:pre;font:400 20px/normal var(--bb);color:#d5460e"><span class="l">Problem</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.03,0.03,1,1032,3872.64);width:279.17px;text-align:center;font:700 24px/normal var(--ma);color:#5d6d87;letter-spacing:2.88px"><span class="l">Should be able to perform complex functionalities</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.03,0.03,1,228,3833.64);width:279.17px;text-align:center;font:700 24px/normal var(--ma);color:#5d6d87;letter-spacing:2.88px"><span class="l">Need a unified platform to perform </span></p>
+<p style="left:0;top:0;transform:matrix(1,0,0,1,829.48,3270.11);white-space:pre;text-align:center;font:700 60px/normal var(--be);color:#352123;letter-spacing:-4.2px"><span class="l">Problem</span></p>
+<p style="left:0;top:0;transform:matrix(1,0,0,1,937.36,3366);white-space:pre;text-align:center;font:700 60px/normal var(--be);color:#352123;letter-spacing:-4.2px"><span class="l">Statement</span></p>
+<p style="left:937.03px;top:3468px;white-space:pre;font:400 30px/normal var(--bb);color:#ec6b05"><span class="l">and their outcomes</span></p>
+<p style="left:0;top:0;transform:matrix(0.97,0.23,-0.23,0.97,1415.55,3630);width:330.1px;height:98.36px;justify-content:flex-start;font:400 20px/28px var(--mv);color:#db0505;letter-spacing:2.4px"><span class="l">85%<span style="font:400 20px/28px var(--mv);color:#494e5d;letter-spacing:2.4px"> reduction in workflow time - now tasks take minutes.</span></span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.09,0.09,1,1133,2892.27);width:346.47px;height:98.36px;justify-content:flex-start;font:400 20px/28px var(--mv);color:#db0505;letter-spacing:2.4px"><span class="l">54%<span style="font:400 20px/28px var(--mv);color:#494e5d;letter-spacing:2.4px"> increase in conversion rates across age groups. Found the UI simple, clean &amp; easy to use. </span></span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.09,0.09,1,130,3605.8);width:308.71px;height:98.36px;justify-content:flex-start;font:400 20px/28px var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l">Collaborating is easier and everything stays in one place!</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.08,0.08,1,239.98,3176.81);width:331.06px;height:98.36px;justify-content:flex-start;font:400 20px/28px var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l">Proprietary data stays  within the platform and configure to expand across various industries.</span></p>
+<p style="left:793px;top:3233px;white-space:pre;font:400 20px/normal var(--my);color:#494e5d;letter-spacing:2.4px"><span class="l">Built for food-tech R&amp;D</span></p>
+<p style="left:0;top:0;transform:matrix(0.97,0.25,-0.25,0.97,455.74,3791.65);white-space:pre;font:400 20px/normal var(--bb);color:#d5460e"><span class="l">Problem</span></p>
+<p style="left:0;top:0;transform:matrix(1,-0.07,0.07,1,1221.08,3837.42);white-space:pre;font:400 20px/normal var(--bb);color:#d5460e"><span class="l">Problem</span></p>
+<p style="left:397px;top:4620px;white-space:pre;font:400 60px/normal var(--bb);color:#494e5d;letter-spacing:2.4px"><span class="l">missing</span></p>
+<p style="left:989px;top:4623px;width:153px;font:600 18px/normal var(--mo);color:#494e5d"><span class="l">Single Role <span style="font:400 18px/normal var(--mo);color:#494e5d">played by the maker</span></span></p>
+<p style="left:1445px;top:4632px;white-space:pre;font:600 40px/normal var(--mo);color:#494e5d"><span class="l">V.02 </span></p>
+<p style="left:405px;top:4771px;white-space:pre;font:400 30px/normal var(--mu);color:#ffffff;letter-spacing:0.6px"><span class="l">Wireframes_1.png</span></p>
+<p style="left:600px;top:5451px;width:418px;font:400 32px/normal var(--du);color:#494e5d;letter-spacing:3.84px"><span class="l">Multiple Roles have been detected.</span></p>
+<p style="left:760.71px;top:5597px;width:35.48px;height:19.35px;justify-content:center;font:400 24px/23.99px var(--du);color:#afaeaa;letter-spacing:2.88px"><span class="l">Fix</span></p>
+<p style="left:530px;top:5387px;white-space:pre;font:400 40px/normal var(--m5);color:#ffffff;letter-spacing:4.8px"><span class="l">Error</span></p>
+<p style="left:860px;top:4893px;white-space:pre;font:400 30px/normal var(--mu);color:#ffffff;letter-spacing:0.6px"><span class="l">Pitches.png</span></p>
+<p style="left:509px;top:5758px;width:912px;text-align:center;font:400 24px/normal var(--lt);color:#494e5d;letter-spacing:-1.2px"><span class="l" style="margin-bottom:10px">Multiple role and responsibilities have been entrusted in this case. </span><span class="l">A detailed showcase has been presented for viewers’ discretion.</span></p>
+<p style="left:391px;top:5941.3px;white-space:pre;font:400 34px/normal var(--bb);color:#494e5d;letter-spacing:1.36px"><span class="l u">PRODUCT DESIGNER</span></p>
+<p style="left:787px;top:5940.3px;white-space:pre;font:400 34px/normal var(--bb);color:#494e5d;letter-spacing:1.36px"><span class="l u">PRODUCT STRATERGIST</span></p>
+<p style="left:1205px;top:5940.3px;white-space:pre;font:400 34px/normal var(--bb);color:#494e5d;letter-spacing:1.36px"><span class="l u">UX RESEACHER</span></p>
+<p style="left:391px;top:6065.3px;white-space:pre;font:400 34px/normal var(--bb);color:#494e5d;letter-spacing:1.36px"><span class="l u">BUSINESS ANALYST</span></p>
+<p style="left:787px;top:6063.3px;white-space:pre;font:400 34px/normal var(--bb);color:#494e5d;letter-spacing:1.36px"><span class="l u">SALES &amp; MARKETING</span></p>
+<p style="left:1205px;top:6065.3px;white-space:pre;font:400 34px/normal var(--bb);color:#494e5d;letter-spacing:1.36px"><span class="l u">DATA STRUCTURER</span></p>
+<p style="left:391px;top:6189.3px;white-space:pre;font:400 34px/normal var(--bb);color:#494e5d;letter-spacing:1.36px"><span class="l u">BRAND Designer</span></p>
+<p style="left:1188px;top:5137px;white-space:pre;font:400 30px/normal var(--mu);color:#ffffff;letter-spacing:0.6px"><span class="l">editing_V08.png</span></p>
+<p style="left:1205px;top:6189.3px;white-space:pre;font:400 34px/normal var(--bb);color:#494e5d;letter-spacing:1.36px"><span class="l u">VIDEO EDITOR</span></p>
+<p style="left:787px;top:6190.3px;white-space:pre;font:400 34px/normal var(--bb);color:#494e5d;letter-spacing:1.36px"><span class="l u">DESIGN-TO-DEV</span></p>
+<p style="left:0;top:0;transform:matrix(0,1,-1,0,1655,4670);white-space:pre;font:600 20px/normal var(--mo);color:#465600"><span class="l">Research &amp; Discovery</span></p>
+<p style="left:0;top:0;transform:matrix(0,1,-1,0,1655,5024);white-space:pre;font:600 20px/normal var(--mo);color:#6a6e63"><span class="l">Info. Architecture</span></p>
+<p style="left:0;top:0;transform:matrix(0,1,-1,0,1655,5378);white-space:pre;font:600 20px/normal var(--mo);color:#52573d"><span class="l">Visual Identity</span></p>
+<p style="left:0;top:0;transform:matrix(0,1,-1,0,1655,5711);white-space:pre;font:600 20px/normal var(--mo);color:#575b4d"><span class="l">Usability Testing</span></p>
+<p style="left:0;top:0;transform:matrix(0,1,-1,0,1655,6033);white-space:pre;font:600 20px/normal var(--mo);color:#353a2b"><span class="l">Impact &amp; Learnings</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,0.12,-0.12,0.99,626.05,6689);white-space:pre;font:400 80px/normal var(--bb);color:#494e5d"><span class="l">outcomes of roles</span></p>
+<p style="left:0;top:0;transform:matrix(0.99,0.12,-0.12,0.99,591.11,6795);width:552.38px;font:400 22px/26.84px var(--mo);color:#000000"><span class="l u">Shaped <span style="font:700 22px/26.84px var(--mo);color:#73a800">structure</span> of the platform</span><span class="l u">Key member on the <span style="font:700 22px/26.84px var(--mo);color:#0058d3">deciding committee</span> for functionalities</span><span class="l u"><span style="font:700 22px/26.84px var(--mo);color:#73a800">Reducing friction</span> between users &amp; workflows</span><span class="l u"><span style="font:700 22px/26.84px var(--mo);color:#0058d3">Designing AI</span> into a world where the most valuable data is <span style="font:700 22px/26.84px var(--mo);color:#0058d3">confidential</span>.</span></p>
+<p style="left:97px;top:12233px;white-space:pre;font:400 36px/normal var(--mu);color:#ffffff;letter-spacing:0.72px"><span class="l">white_board_1.png</span></p>
+<p style="left:987px;top:12791px;white-space:pre;font:400 36px/normal var(--mu);color:#ffffff;letter-spacing:0.72px"><span class="l">requiremnt_brief_1.png</span></p>
+<p style="left:64px;top:13279px;white-space:pre;font:400 30px/normal var(--mu);color:#ffffff;letter-spacing:0.6px"><span class="l">white_board_2.png</span></p>
+<p style="left:1298px;top:12399px;white-space:pre;font:400 100px/normal var(--bb);color:#d5460e"><span class="l">Structuring</span></p>
+<p style="left:1211px;top:12381px;white-space:pre;font:400 30px/normal var(--bb);color:#47484a"><span class="l">step 4</span></p>
+<p style="left:1120px;top:12535px;width:644px;font:400 20px/normal var(--mv);color:#494e5d;letter-spacing:2.4px"><span class="l">Turned to the drawing board to bring all this information into a structured visualizer.</span></p>
+<p style="left:236px;top:15947px;white-space:pre;font:400 24px/normal var(--bb);color:#ffffff;letter-spacing:0.48px"><span class="l">Due to confidentiality reasons, Only a part of the flow is shown</span></p>
+<p style="left:897px;top:15777px;width:869px;font:400 24px/38px var(--lt);color:#ffffff;letter-spacing:-1.2px"><span class="l u">Every feature had its own user flow, which helped us map out the complex paths early.</span><span class="l u">In order for the internal teams (dev team) to align with, these module based user flows played a very vital role.</span></p>
+<p style="left:239px;top:15767px;width:155px;height:116px;justify-content:center;font:400 100px/normal var(--bb);color:#000000"><span class="l">user</span></p>
+<p style="left:510px;top:15823px;white-space:pre;font:400 80px/normal var(--bb);color:#ffffff"><span class="l">Flows</span></p>
+<p style="left:93px;top:19258px;white-space:pre;font:400 41px/normal var(--mu);color:#ffffff;letter-spacing:0.82px"><span class="l">Work_done.gallery</span></p>
+<p style="left:99px;top:19427px;white-space:pre;font:600 50px/normal var(--bv);color:#494e5d;letter-spacing:2px"><span class="l">Pictures</span></p>
+<p style="left:465px;top:19319px;white-space:pre;font:500 24px/normal var(--bv);color:#494e5d;letter-spacing:0.96px"><span class="l">Edit</span></p>
+<p style="left:610px;top:19320px;white-space:pre;font:500 24px/normal var(--bv);color:#494e5d;letter-spacing:0.96px"><span class="l">Sort</span></p>
+<p style="left:757px;top:19321px;white-space:pre;font:500 24px/normal var(--bv);color:#494e5d;letter-spacing:0.96px"><span class="l">View</span></p>
+<p style="left:1730px;top:19451px;white-space:pre;font:400 18px/normal var(--bv);color:#494e5d;letter-spacing:0.72px"><span class="l">11 items</span></p>
+<p style="left:1294px;top:19331px;width:522px;height:21px;justify-content:flex-start;font:400 20px/20px var(--po);color:#bababa"><span class="l">Search</span></p>
+<p style="left:302px;top:19305px;width:66px;height:63px;justify-content:center;font:500 24px/normal var(--bv);color:#494e5d;letter-spacing:0.96px"><span class="l">New</span></p>
+<p style="left:0;top:0;transform:matrix(1,0,0,1,371.37,17617.11);white-space:pre;text-align:center;font:700 60px/normal var(--be);color:#352123;letter-spacing:-4.2px"><span class="l">System</span></p>
+<p style="left:0;top:0;transform:matrix(1,0,0,1,242.49,17521.16);white-space:pre;text-align:center;font:700 60px/normal var(--be);color:#352123;letter-spacing:-4.2px"><span class="l">Design</span></p>
+<p style="left:635px;top:735.59px;width:651.81px;height:44.62px;justify-content:flex-start;text-align:center;font:700 16px/16.01px var(--lt);color:#494e5d;letter-spacing:1.6px"><span class="l">I CO-FOUNDED A PLATFORM DESGINED FOR THE INNOVATORS IN THE FOOD-TECH INDUSTRY</span></p>
+<p style="left:838px;top:530.39px;white-space:pre;font:400 90px/normal var(--is);color:#494e5d"><span class="l">Innovate</span></p>
+<p style="left:1142.18px;top:294.15px;width:278.89px;height:39.84px;justify-content:center;font:400 31px/normal var(--ob);color:#363636;letter-spacing:3.72px"><span class="l">Food-Tech Industry</span></p>
+<p style="left:760px;top:610px;width:401.6px;height:133.87px;justify-content:flex-start;font:400 110px/normal var(--bb);color:#494e5d"><span class="l">Case Study</span></p>
+<p style="left:1277.64px;top:384.99px;width:143.43px;height:54.18px;justify-content:flex-start;font:500 32px/normal var(--du);color:#494e5d;letter-spacing:3.84px"><span class="l">4217/26</span></p>
+<p style="left:1775px;top:88px;white-space:pre;font:400 25px/normal var(--bv);color:#494e5d"><span class="l">@2026</span></p>
+<p style="left:391px;top:23891.69px;white-space:pre;font:400 60px/normal var(--bb);color:#494e5d;letter-spacing:2.4px"><span class="l">Take aways</span></p>
+<p style="left:983px;top:23894.69px;width:153px;font:600 18px/normal var(--mo);color:#494e5d"><span class="l">Experience </span><span class="l"><span style="font:400 18px/normal var(--mo);color:#494e5d">so good that i would rate it...</span></span></p>
+<p style="left:1412px;top:23903.69px;white-space:pre;font:600 40px/normal var(--mo);color:#494e5d"><span class="l">8.5/10</span></p>
+<p style="left:391px;top:24045px;width:143.73px;font:400 30px/normal var(--bb);color:#d5460e"><span class="l">takeaway 1</span></p>
+<p style="left:391px;top:24282px;width:143.73px;font:400 30px/normal var(--bb);color:#d5460e"><span class="l">takeaway 2</span></p>
+<p style="left:391px;top:24519px;width:143.73px;font:400 30px/normal var(--bb);color:#d5460e"><span class="l">takeaway 3</span></p>
+<p style="left:391px;top:24756px;width:143.73px;font:400 30px/normal var(--bb);color:#d5460e"><span class="l">takeaway 4</span></p>
+<p style="left:391px;top:24993px;width:143.73px;font:400 30px/normal var(--bb);color:#d5460e"><span class="l">takeaway 5</span></p>
+<p style="left:391px;top:25230px;width:143.73px;font:400 30px/normal var(--bb);color:#d5460e"><span class="l">takeaway 6</span></p>
+<p style="left:391px;top:24099px;width:1139px;font:400 24px/normal var(--mv);color:#494e5d;letter-spacing:2.88px"><span class="l">The importance of creating a design system that would not only have components but also production ready system that would sustain any further iterations.</span></p>
+<p style="left:391px;top:24336px;width:1139px;font:400 24px/normal var(--mv);color:#494e5d;letter-spacing:2.88px"><span class="l">Documenting every change so as to not only keep track but also sometimes to bring an idea that would be a great implementation in the current sprint. So, the practise of both DRDs and BRDs is now an easy follow.</span></p>
+<p style="left:391px;top:24573px;width:1139px;font:400 24px/normal var(--mv);color:#494e5d;letter-spacing:2.88px"><span class="l">Each industry has predefined aesthetics. So, building on that causes less friction and sometimes that simplicity makes overwhelming functionalities flow like a piece of cake.</span></p>
+<p style="left:391px;top:24810px;width:1139px;font:400 24px/normal var(--mv);color:#494e5d;letter-spacing:2.88px"><span class="l">As someone who also did the branding, how certain elements play through into the products and tell the story was a very interesting learning as creating the authenticity and continuity felt very natural.</span></p>
+<p style="left:391px;top:25047px;width:1139px;font:400 24px/normal var(--mv);color:#494e5d;letter-spacing:2.88px"><span class="l">Inclusivity between age groups and other factors were stories that was documented and considered very immensely whist creating the platform as sometimes unheard opinions bring the overall performance.</span></p>
+<p style="left:391px;top:25284px;width:1139px;font:400 24px/normal var(--mv);color:#494e5d;letter-spacing:2.88px"><span class="l">Creating an end-to-end platform taught me how AI is a very good helping hand rather than trying to replace someone's job. How the expertise still lies in the was the work is still conducted and how introducing AI features go hand-in-hand.</span></p>
+<p style="left:0;top:0;transform:matrix(0,-1,1,0,269,25451);white-space:pre;font:600 20px/normal var(--mo);color:#465600"><span class="l">Research &amp; Discovery</span></p>
+<p style="left:0;top:0;transform:matrix(0,-1,1,0,269,25097);white-space:pre;font:600 20px/normal var(--mo);color:#6a6e63"><span class="l">Info. Architecture</span></p>
+<p style="left:0;top:0;transform:matrix(0,-1,1,0,269,24743);white-space:pre;font:600 20px/normal var(--mo);color:#52573d"><span class="l">Visual Identity</span></p>
+<p style="left:0;top:0;transform:matrix(0,-1,1,0,269,24410);white-space:pre;font:600 20px/normal var(--mo);color:#575b4d"><span class="l">Usability Testing</span></p>
+<p style="left:0;top:0;transform:matrix(0,-1,1,0,269,24088);white-space:pre;font:600 20px/normal var(--mo);color:#353a2b"><span class="l">Impact &amp; Learnings</span></p>
+<p style="left:189px;top:25777px;white-space:pre;font:400 244px/normal var(--bb);color:#494e5d"><span class="l">AND That’s It folks!</span></p>
+<p style="left:189px;top:26048px;width:1034px;height:45px;justify-content:flex-start;font:700 24px/32.88px var(--lt);color:#494e5d;letter-spacing:2.4px"><span class="l">THANK YOU FOR GOING THROUGH ALL THIS AND MAKING IT TILL THE END! </span></p>
+</div>
 </main>
+<script>
+(function(){var r=document.documentElement;function f(){r.style.setProperty('--s',Math.min(1,r.clientWidth/1920))}f();addEventListener('resize',f)})();
+</script>
 </body>
 </html>
