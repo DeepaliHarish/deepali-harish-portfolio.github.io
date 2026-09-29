@@ -6,7 +6,7 @@
 @font-face{font-family:"Pixelated Elegance";src:url(assets/fonts/PixelatedElegance.ttf) format("truetype");font-display:swap}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-html,body{overflow-x:clip}
+html,body{overflow-x:clip;overscroll-behavior-x:none}
 body{margin:0;font-family:Moderustic,system-ui,sans-serif;color:#3b3b3b;background:#fff;position:relative}
 p,h1,h2,h3{margin:0;font-weight:inherit}
 button{font:inherit;color:inherit}
