@@ -194,7 +194,7 @@
       `<div class="m-body"><h2 id="m-title">${p.title}</h2><div class="chips">${p.tags.map(([t, hl]) => `<span${hl ? ' class="hl"' : ''}>${t}</span>`).join('')}</div><hr>` +
       (p.sections || DEFAULT).map(([h, txt, img]) => `<h3>${h}</h3><p>${txt}</p>` +
         (img ? `<img class="m-img" src="${CS + img}.webp" alt="${h} from the case study" loading="lazy">` : '<div class="ph-box m-img">Image</div>')).join('') +
-      (p.link ? `<a class="cta" href="${p.link}" target="_blank" rel="noopener">View case study <span aria-hidden="true">↗</span></a>` : '') + '</div>';
+      (p.link ? `<a class="cta" href="${p.link}">View case study <span aria-hidden="true">→</span></a>` : '') + '</div>';
     lastFocus = btn; modal.hidden = false; mScroll.scrollTop = 0; document.body.style.overflow = 'hidden';
     requestAnimationFrame(() => modal.classList.add('show')); $('.m-close').focus();
   }
